@@ -9,8 +9,7 @@
 try  
 {	
 	require "config.php";
-	require "common.php";
-
+	
 	$connection = new PDO($dsn, $username, $password, $options);
 
 	$gradesResult = "SELECT Grade1, Grade2, Grade3, Grade4 FROM students where StudentsID = :studentID";
